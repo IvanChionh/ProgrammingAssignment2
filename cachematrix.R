@@ -48,6 +48,7 @@ cacheSolve <- function(x, ...) {
           return(m)
         }
         
+        ## if already calculated, retrieve the inverse from cache
         data <- x$get()
         
         m <- solve(data) %*% data
